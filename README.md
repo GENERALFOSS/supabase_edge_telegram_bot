@@ -12,6 +12,15 @@ dart pub get
 
  
 
+## Generate Config / Data
+
+
+```bash
+dart run
+```
+
+lalu pilih menu yang kalian mau 
+
 ## Deploy Command
 
 
