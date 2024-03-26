@@ -19,6 +19,19 @@ supabase init
 supabase functions new edge_telegram_bot
 ```
  
+## Deploy Command
+
+
+```bash
+# compile dahulu ke javascript 
+dart run edge_dart build supabase_functions
+mkdir -p supabase/functions/edge_telegram_bot
+cp -r -f functions/ supabase/
+
+sudo SUPABASE_ACCESS_TOKEN="sbp_gantidengantoken_supabase" supabase functions deploy --project-ref ganti_dengan_project_id_kalian --no-verify-jwt
+```
+ 
+
 
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">
