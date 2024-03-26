@@ -10,16 +10,8 @@ cd supabase_edge_telegram_bot
 dart pub get
 ```
 
-## Supabase Init (Jika kalian ingin deploy supabase di local) 
-
-```bash
-supabase init
-```
-
-```bash
-supabase functions new edge_telegram_bot
-```
  
+
 ## Deploy Command
 
 
@@ -34,6 +26,35 @@ sudo SUPABASE_ACCESS_TOKEN="sbp_gantidengantoken_supabase" supabase functions de
  
 
 
+## Local Development 
+
+```bash
+supabase init
+```
+
+```bash
+supabase functions new edge_telegram_bot
+```
+ 
+## Aktifin dahulu
+
+```bash
+sudo supabase stop
+sudo supabase start
+sudo supabase status
+sudo supabase status > supabase-server.txt
+```
+ 
+
+## Test Development Local
+
+```bash
+dart run edge_dart build supabase_functions
+mkdir -p supabase/functions/edge_telegram_bot
+cp -r -f functions/ supabase/
+sudo supabase functions serve --no-verify-jwt
+```
+ 
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">
   Global Corporation
