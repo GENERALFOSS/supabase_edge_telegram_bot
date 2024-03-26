@@ -7,6 +7,7 @@ Supabase Edge Telegram Bot Source code ini hanyalah sebuah source code contoh De
 ```bash
 git clone https://github.com/GENERALFOSS/supabase_edge_telegram_bot.git
 cd supabase_edge_telegram_bot
+dart pub get
 ```
 
 ## Supabase Init (Jika kalian ingin deploy supabase di local) 
