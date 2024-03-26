@@ -1,0 +1,3 @@
+supabase: 
+  functions: 
+    edge_telegram_bot: lib/edge_telegram_bot_edge.dart
